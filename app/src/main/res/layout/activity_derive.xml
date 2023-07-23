@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".interfaces.derive"
+    android:background="@drawable/backgrnd"
+    >
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialbutton2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <RadioGroup
+        android:id="@+id/rdcomops"
+        android:layout_width="391dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="220dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdderive1"
+            android:layout_width="120dp"
+            android:layout_height="167dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/symbdev"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Symbolic Derivative"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdderive2"
+            android:layout_width="120sp"
+            android:layout_height="167dp"
+            android:layout_marginStart="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/numerdev"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Valued Derivative"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialbutton3"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="#bababa"
+        android:layout_width="203dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="132dp"
+        android:text="Let's Derive !"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/titlederive"
+
+        android:layout_width="339dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="Derivative"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowLatex">
+
+    <ru.noties.jlatexmath.JLatexMathView
+        android:id="@+id/mathdev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#d9d9d9"
+        android:padding="16dip"
+        android:scrollbarSize="15sp"
+        android:scrollbars="horizontal"
+        app:jlmv_alignHorizontal="center"
+        app:jlmv_alignVertical="center"
+        app:jlmv_textSize="16sp" />
+
+</LinearLayout>

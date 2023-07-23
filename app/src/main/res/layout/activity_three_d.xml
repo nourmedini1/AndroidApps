@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".interfaces.ThreeD">
+
+    <EditText
+        android:id="@+id/ey"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="  end boundY"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sx" />
+
+    <EditText
+        android:id="@+id/sy"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="  start boundY"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/ey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sx"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="  start boundX"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v3" />
+
+    <EditText
+        android:id="@+id/ex"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="  end boundX"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sx" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/f3"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="give us the function"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/v3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/v3"
+        android:layout_width="215dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="choose your variables"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/s3"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="183dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Show result"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        ></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="342dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Plot 3D Graph"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/h3"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bk3"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/h3"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

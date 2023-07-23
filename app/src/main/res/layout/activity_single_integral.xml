@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".interfaces.SingleIntegral">
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/limitssingleint"
+        android:layout_width="204sp"
+        android:layout_height="70sp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="limits like lowlim,uplim"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/functionssingleint"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="give us the function"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/variablessingleint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/variablessingleint"
+        android:layout_width="204sp"
+        android:layout_height="70sp"
+        android:layout_marginBottom="408dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="choose your variable"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitsingleint"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="167dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Get Result"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        ></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/titlesingleint"
+        android:layout_width="254dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text="Single Definite Integral"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/homesingleint"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backsingleint"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homesingleint"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

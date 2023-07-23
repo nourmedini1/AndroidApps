@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".results.ResultLinear">
+    <TextView
+        android:id="@+id/linres"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="start"
+        android:text="The result:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mathlinres"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ru.noties.jlatexmath.JLatexMathView
+        android:id="@+id/mathlinres"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/custom_mathview"
+        android:backgroundTint="#70ffffff"
+        android:padding="16dip"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:scrollIndicators="right"
+        android:scrollbarSize="15sp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+        app:jlmv_alignHorizontal="start"
+        app:jlmv_textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathsys" />
+
+    <TextView
+        android:id="@+id/titlelinres"
+        android:layout_width="342dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text="Linear System"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hlinres"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blinres"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hlinres"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <ru.noties.jlatexmath.JLatexMathView
+        android:id="@+id/mathsys"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_mathview"
+        android:backgroundTint="#70ffffff"
+        android:padding="16dip"
+        android:paddingStart="8sp"
+        android:paddingEnd="8sp"
+        android:scrollIndicators="right"
+        android:scrollbarSize="15sp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+        app:jlmv_alignHorizontal="start"
+        app:jlmv_textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlelinres" />
+
+    <TextView
+        android:id="@+id/sys"
+
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="start"
+        android:text="The linear system :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mathsys"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

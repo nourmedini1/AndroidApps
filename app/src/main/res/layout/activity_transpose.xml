@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".interfaces.Transpose">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gentrans"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="144dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Generate"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittrans"></com.google.android.material.button.MaterialButton>
+
+    <EditText
+        android:id="@+id/coltrans"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="232dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="number of columns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/subtrans"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Get results !"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        ></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/tittrans"
+        android:layout_width="367dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="Transposition"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/htrans"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btrans"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/htrans"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+
+    <TableLayout
+        android:id="@+id/mattrans"
+        android:layout_width="364dp"
+        android:layout_height="331dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:gravity="center"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642">
+
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/rowtrans"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="number of rows"
+
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

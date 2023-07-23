@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context=".interfaces.Complex">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hcomp"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bcomp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hcomp"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <RadioGroup
+        android:id="@+id/rdcomp"
+        android:layout_width="391dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="220dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdcomp1"
+            android:layout_width="120dp"
+            android:layout_height="167dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/polar"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Polar Form"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdcomp2"
+            android:layout_width="120sp"
+            android:layout_height="167dp"
+            android:layout_marginStart="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/opers"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Complex Operations"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/subcomp"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="#bababa"
+        android:layout_width="203dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="132dp"
+        android:text="Start !"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/tcomp"
+
+        android:layout_width="339dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="Complex"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

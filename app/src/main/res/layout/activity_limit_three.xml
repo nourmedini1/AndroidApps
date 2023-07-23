@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".interfaces.limitThree">
+
+    <RadioGroup
+        android:id="@+id/d"
+        android:layout_width="176dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/d1"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:text="  +" />
+
+        <RadioButton
+            android:id="@+id/d2"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="  -" />
+    </RadioGroup>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/b3"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="bound3"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/a"
+        android:layout_width="176dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="408dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/a1"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:text="  +" />
+
+        <RadioButton
+            android:id="@+id/a2"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="  -" />
+    </RadioGroup>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/b2"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="312dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="bound2"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/b1"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="408dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="bound1"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/funthree"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="give us the function"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/varthree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/varthree"
+        android:layout_width="204sp"
+        android:layout_height="70sp"
+        android:layout_marginBottom="504dp"
+        android:background="@drawable/custom_edittext"
+        android:completionThreshold="1"
+        android:hint="choose your variables var1,var2,var3"
+        android:paddingLeft="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sub"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="167dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Get Result"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        ></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/titlethree"
+        android:layout_width="254dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Three Variables Limit"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hm"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bck"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hm"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <RadioGroup
+        android:id="@+id/c"
+        android:layout_width="176dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/c1"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:text="  +" />
+
+        <RadioButton
+            android:id="@+id/c2"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="  -" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

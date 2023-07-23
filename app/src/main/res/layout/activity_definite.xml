@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context=".interfaces.Definite">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/homedefint"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_home_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backdefint"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homedefint"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2sp"></com.google.android.material.button.MaterialButton>
+
+    <RadioGroup
+        android:id="@+id/rddefint"
+        android:layout_width="396dp"
+        android:layout_height="187dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="284dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rddefint1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/singl"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Single Integral"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rddefint2"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/doubleint"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Double Integral"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rddefint3"
+            android:layout_width="120sp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:backgroundTint="@color/white"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/triple"
+            android:elevation="12sp"
+            android:shadowColor="@color/black"
+            android:text="Triple Integral"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitdefint"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="203dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/custom_button"
+        android:text="Integrate !"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#bababa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/titledefint"
+
+        android:layout_width="339dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="Definite Integral"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

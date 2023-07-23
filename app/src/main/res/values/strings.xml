@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hopefully</string>
+    <string-array name="functions">
+        <item>exp()</item>
+        <item>ln()</item>
+        <item>sin()</item>
+        <item>cos()</item>
+        <item>tan()</item>
+        <item>asin()</item>
+        <item>acos()</item>
+        <item>atan()</item>
+        <item>acosh()</item>
+        <item>asinh()</item>
+        <item>atan()</item>
+        <item>cosh()</item>
+        <item>sinh()</item>
+        <item>tanh()</item>
+        <item>pi</item>
+        <item>sqrt()</item>
+    </string-array>
+</resources>
